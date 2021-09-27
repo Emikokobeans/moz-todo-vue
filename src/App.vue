@@ -2,7 +2,7 @@
   <div id="app">
     <h1>To-Do List</h1>
     <ul>
-      <li>
+      <li v-for="item in ToDoItems" :key="item.id">
         <to-do-item label="My ToDo Item"></to-do-item>
       </li>
     </ul>
@@ -20,10 +20,14 @@ export default {
   data() {
     return {
       ToDoItems: [
-        { label: 'Learn Vue', done: false },
-        { label: 'Create a Vue project with the CLI', done: true },
-        { label: 'Have fun', done: true },
-        { label: 'Create a to-do list', done: false }
+        { id: uniqueId('todo-'), label: 'Learn Vue', done: false },
+        {
+          id: uniqueId('todo-'),
+          label: 'Create a Vue project with the CLI',
+          done: true
+        },
+        { id: uniqueId('todo-'), label: 'Have fun', done: true },
+        { id: uniqueId('todo-'), label: 'Create a to-do list', done: false }
       ]
     };
   }
