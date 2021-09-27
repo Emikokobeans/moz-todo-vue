@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form @submit.prevent="onSubmit">
     <label for="new-todo-input">
       What needs to be done?
     </label>
@@ -9,5 +9,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    onSubmit() {}
+  }
+};
 </script>
