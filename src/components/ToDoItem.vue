@@ -9,7 +9,13 @@
 export default {
   props: {
     label: { required: true, type: String },
-    done: { default: false, type: Boolean }
+    done: { default: false, type: Boolean },
+    prop: { required: true, type: String }
+  },
+  data() {
+    return {
+      isDone: this.done
+    };
   }
 };
 </script>
