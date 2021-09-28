@@ -2,7 +2,7 @@
 
 A To Do List app created using Vue.js
 
-Published [here](https://emikokobeans.github.io/moz-todo-vue/)
+Published [here](https://todolist-vue-by-emi.netlify.app/)
 
 ---
 
