@@ -30,8 +30,17 @@ export default {
   },
   data() {
     return {
-      isDone: this.done
+      isDone: this.done,
+      isEditing: false
     };
+  },
+  methods: {
+    deleteToDo() {
+      this.$emit('item-deleted');
+    },
+    toggleToItemEditForm() {
+      this.isEditing = true;
+    }
   }
 };
 </script>
