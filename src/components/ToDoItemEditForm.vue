@@ -15,7 +15,7 @@
         Cancel
         <span class="visually-hidden">editing {{ label }}</span>
       </button>
-      <button type="submit" class="btn btn__primary">
+      <button type="submit" class="btn btn__primary" @click="onSubmit">
         Save
         <span class="visually-hidden">edit for {{ label }}</span>
       </button>

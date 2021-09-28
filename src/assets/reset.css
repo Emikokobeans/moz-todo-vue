@@ -41,8 +41,9 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+  line-height: 1.5;
+  margin-top: 10px;
+  padding: 10px;
 }
 button,
 input {
