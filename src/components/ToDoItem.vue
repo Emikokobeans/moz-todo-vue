@@ -3,12 +3,12 @@
     <div class="custom-checkbox">
       <input
         type="checkbox"
+        class="checkbox"
         :id="id"
         :checked="isDone"
         @change="$emit('checkbox-changed')"
-        class="checkbox"
       />
-      <label for="todo-item" class="checkbox-label">{{ label }}</label>
+      <label :for="id" class="checkbox-label">{{ label }}</label>
     </div>
     <div class="btn-group">
       <button
@@ -117,7 +117,7 @@ export default {
   appearance: none;
 }
 .custom-checkbox > input:focus {
-  outline: 3px dashed #fd0;
+  outline: 3px solid #74b72e;
   outline-offset: 0;
   box-shadow: inset 0 0 0 2px;
 }
@@ -169,7 +169,7 @@ export default {
 }
 .custom-checkbox > input[type='checkbox']:focus + label::before {
   border-width: 4px;
-  outline: 3px dashed #228bec;
+  outline: 3px solid #228bec;
 }
 .custom-checkbox > label::after {
   box-sizing: content-box;
