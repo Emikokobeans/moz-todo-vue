@@ -2,6 +2,8 @@
 
 A To Do List app created using Vue.js
 
+Published [here](https://emikokobeans.github.io/moz-todo-vue/)
+
 ---
 
 ## Project setup
