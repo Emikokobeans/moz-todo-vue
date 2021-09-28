@@ -2,6 +2,8 @@
 
 A To Do List app created using Vue.js
 
+---
+
 ## Project setup
 
 ```
